@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-db-writer-test
+  labels:
+    app: stock-db-writer-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-db-writer-test
+  template:
+    metadata:
+      labels:
+        app: stock-db-writer-test
+    spec:
+      containers:
+      - name: stock-db-writer-test
+        image: stock-db-writer-test:latest
+        ports:
+        - containerPort: 8080
