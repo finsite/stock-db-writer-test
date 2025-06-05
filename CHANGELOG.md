@@ -7,6 +7,12 @@
 - Initial project structure cloned from `template_python`
 - Custom configuration and module setup for `stock-db-writer-test`
 
+## v0.1.3 (2025-06-05)
+
+### Fix
+
+- **files**: Verify functionality
+
 ## v0.1.2 (2025-06-04)
 
 ### Fix
